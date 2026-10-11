@@ -60,3 +60,6 @@ Use this tool only on networks and devices you own or have explicit permission t
 ## Author
 
 Created as a Python network monitoring project.
+## Dashboard Preview
+
+![NETWATCH Dashboard](NETWATCH_dashboard_public.png)
