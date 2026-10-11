@@ -1,34 +1,62 @@
-# Network Packet Analyzer
+# NETWATCH — Network Packet Analyzer
 
-## Cyber Security Internship – Task 1
+A Python-based network packet analyzer with a graphical dashboard for monitoring network traffic in real time.
 
-### Project Description
-A Python-based network packet analyzer that captures and analyzes network packets using Scapy.
+## Features
 
-### Features
-- Captures network packets on an authorized network.
-- Displays source IP and destination IP.
-- Identifies TCP, UDP, and ICMP protocols.
-- Displays packet size and timestamp.
-- Saves packet details to a CSV file.
-- Generates a summary report with protocol counts.
+- Real-time packet capture using Scapy
+- Dark theme with neon-green interface
+- Displays source IP and destination IP
+- Identifies TCP, UDP, ICMP, and other IP packets
+- Shows total packets, protocol counts, and packet sizes
+- Search packets and filter by protocol
+- Export captured packet details to CSV
+- Generate a packet summary report
+- Clear the packet table and reset statistics
 
-### Technologies Used
+## Technologies Used
+
 - Python
 - Scapy
-- Npcap
-- CSV
+- Tkinter
+- CSV file handling
+- Git and GitHub
 
-### How to Run
-1. Install Python.
-2. Install Scapy using `python -m pip install scapy`.
-3. Install Npcap on Windows.
-4. Run the program:
-   `python packet_analyzer.py`
+## Project Files
 
-### Output Files
-- `captured_packets.csv`
-- `summary_report.txt`
+- `packet_analyzer.py` — command-line packet analyzer
+- `dashboard.py` — graphical packet analyzer dashboard
+- `requirements.txt` — Python dependency list
 
-### Disclaimer
-Use this tool only on your own computer or networks for which you have permission.
+## Installation
+
+1. Install Python 3 on your computer.
+2. Install Npcap on Windows if required for packet capture.
+3. Open a terminal in the project folder.
+4. Install the required package:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Run the Dashboard
+
+```bash
+python dashboard.py
+```
+
+If packet capture does not start on Windows, check Npcap installation and the permissions required by your system.
+
+## Run the Command-Line Analyzer
+
+```bash
+python packet_analyzer.py
+```
+
+## Important Note
+
+Use this tool only on networks and devices you own or have explicit permission to monitor. Packet capture may expose sensitive network information. Do not publish captured traffic or private reports.
+
+## Author
+
+Created as a Python network monitoring project.
